@@ -98,23 +98,33 @@ Test your model:
 !python detect.py --weights runs/train/exp/best.pt --img 640 --source <test_image_or_video>
 ```
 Evaluate performance metrics like precision, recall, and mAP.
-
+---
 ### After obtaining the best.pt file, consider:
 
 ### Testing the Model:
+
 Use the model on unseen data to evaluate real-world performance.
+
+---
 
 ### Fine-Tuning:
 Improve performance by adjusting hyperparameters or adding more data.
 
+---
+
 ### Deployment:
 Deploy the model on edge devices or integrate it into applications using ONNX, TensorRT, or Flask/Django web apps.
-Acknowledgments
+Acknowledgements
+
+---
 
 ### This project leverages:
 
 Ultralytics YOLOv5 Repository for the base model and training scripts.
 Tools like LabelImg and Roboflow for dataset annotation and preparation.
+
+---
+
 
 Feel free to fork, clone, and improve this repository for your own custom YOLOv5n training projects! 🚀
 

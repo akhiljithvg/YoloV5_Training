@@ -97,7 +97,7 @@ Test your model:
 ```
 !python detect.py --weights runs/train/exp/best.pt --img 640 --source <test_image_or_video>
 ```
-Evaluate performance metrics like precision, recall, and mAP.
+##### Evaluate performance metrics like precision, recall, and mAP.
 ---
 ### After obtaining the best.pt file, consider:
 

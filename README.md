@@ -51,6 +51,19 @@ To train your model:
    │ ├── val/
    │ └── test/
 
+## Dataset Structure
+
+| Directory  | Sub-Directory | Description            |
+|------------|---------------|------------------------|
+| `dataset/` | `images/`     | Image files            |
+|            | `train/`      | Training images        |
+|            | `val/`        | Validation images      |
+|            | `test/`       | Testing images (optional) |
+|            | `labels/`     | Label files            |
+|            | `train/`      | Labels for training    |
+|            | `val/`        | Labels for validation  |
+|            | `test/`       | Labels for testing (optional) |
+
 
 Each `.txt` file in the `labels` folder should contain the bounding box annotations in YOLO format:
 
@@ -129,7 +142,5 @@ Feel free to fork, clone, and improve this repository for your own custom YOLOv5
 
 ---
 
-You can copy and paste this entire block into your `README.md` file on GitHub. It includes everything from the project introduction to the necessary steps for training, testing, and deploying your YOLOv5n model.
-
-Let me know if you need any further adjustments!
+                                               Created By Akhiljith ❤️
 

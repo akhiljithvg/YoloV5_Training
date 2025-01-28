@@ -75,7 +75,7 @@ names: [<class_1>, <class_2>, ...]
 
 # Training Process
 Pre-Trained Weights:
-The training process uses yolov5n.pt as the base weights.
+The training process uses ```yolov5n.pt``` as the base weights.
 
 ### Hyperparameters:
 Customize key hyperparameters like batch size, epochs, and learning rate to optimize your training.

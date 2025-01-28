@@ -101,16 +101,17 @@ Evaluate performance metrics like precision, recall, and mAP.
 
 ### After obtaining the best.pt file, consider:
 
-#### Testing the Model:
+### Testing the Model:
 Use the model on unseen data to evaluate real-world performance.
 
-#### Fine-Tuning:
+### Fine-Tuning:
 Improve performance by adjusting hyperparameters or adding more data.
 
-#### Deployment:
+### Deployment:
 Deploy the model on edge devices or integrate it into applications using ONNX, TensorRT, or Flask/Django web apps.
 Acknowledgments
-This project leverages:
+
+### This project leverages:
 
 Ultralytics YOLOv5 Repository for the base model and training scripts.
 Tools like LabelImg and Roboflow for dataset annotation and preparation.

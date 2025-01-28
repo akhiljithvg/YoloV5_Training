@@ -40,6 +40,7 @@ To train your model:
 1. **Annotate Images**: Use [LabelImg](https://github.com/heartexlabs/labelImg) or [Roboflow](https://roboflow.com/) to annotate your dataset.
 2. **Format Dataset**: Ensure your dataset follows the structure below:
 
+
    dataset/
    ├── images/
    │ ├── train/
@@ -49,6 +50,7 @@ To train your model:
    │ ├── train/
    │ ├── val/
    │ └── test/
+
 
 Each `.txt` file in the `labels` folder should contain the bounding box annotations in YOLO format:
 
@@ -81,18 +83,21 @@ names: [<class_1>, <class_2>, ...]
 ```
 
 # Training Process
-Pre-Trained Weights: The training process uses yolov5n.pt as the base weights.
+Pre-Trained Weights:
+The training process uses yolov5n.pt as the base weights.
 
-Hyperparameters: Customize key hyperparameters like batch size, epochs, and learning rate to optimize your training.
+### Hyperparameters:
+Customize key hyperparameters like batch size, epochs, and learning rate to optimize your training.
 
-Output Files:
+### Output Files:
+The ``` runs/train/exp ``` directory will contain:
+```best.pt```: The best-performing weights.
 
-The runs/train/exp directory will contain:
-best.pt: The best-performing weights.
+results.png:
+A graphical summary of training metrics.
 
-results.png: A graphical summary of training metrics.
-
-confusion_matrix.png: A detailed performance visualization.
+confusion_matrix.png:
+A detailed performance visualization.
 
 ### Results and Evaluation
 Once training is complete:
@@ -103,20 +108,21 @@ Test your model:
 ```
 Evaluate performance metrics like precision, recall, and mAP.
 
-Next Steps
+### After obtaining the best.pt file, consider:
 
-After obtaining the best.pt file, consider:
+#### Testing the Model:
+Use the model on unseen data to evaluate real-world performance.
 
-Testing the Model: Use the model on unseen data to evaluate real-world performance.
-Fine-Tuning: Improve performance by adjusting hyperparameters or adding more data.
-Deployment: Deploy the model on edge devices or integrate it into applications using ONNX, TensorRT, or Flask/Django web apps.
+#### Fine-Tuning:
+Improve performance by adjusting hyperparameters or adding more data.
+
+#### Deployment:
+Deploy the model on edge devices or integrate it into applications using ONNX, TensorRT, or Flask/Django web apps.
 Acknowledgments
 This project leverages:
 
 Ultralytics YOLOv5 Repository for the base model and training scripts.
 Tools like LabelImg and Roboflow for dataset annotation and preparation.
-License
-This repository is open-source and distributed under the MIT License. Please ensure proper attribution to the authors of YOLOv5 and this repository when using the code.
 
 Feel free to fork, clone, and improve this repository for your own custom YOLOv5n training projects! 🚀
 

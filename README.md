@@ -40,29 +40,7 @@ To train your model:
 1. **Annotate Images**: Use [LabelImg](https://github.com/heartexlabs/labelImg) or [Roboflow](https://roboflow.com/) to annotate your dataset.
 2. **Format Dataset**: Ensure your dataset follows the structure below:
 
-
-   dataset/
-   ├── images/
-   │ ├── train/
-   │ ├── val/
-   │ └── test/
-   ├── labels/
-   │ ├── train/
-   │ ├── val/
-   │ └── test/
-
-## Dataset Structure
-
-| Directory  | Sub-Directory | Description            |
-|------------|---------------|------------------------|
-| `dataset/` | `images/`     | Image files            |
-|            | `train/`      | Training images        |
-|            | `val/`        | Validation images      |
-|            | `test/`       | Testing images (optional) |
-|            | `labels/`     | Label files            |
-|            | `train/`      | Labels for training    |
-|            | `val/`        | Labels for validation  |
-|            | `test/`       | Labels for testing (optional) |
+![alt text](image.png)
 
 
 Each `.txt` file in the `labels` folder should contain the bounding box annotations in YOLO format:
